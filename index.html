@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ایاز پٹرولیم</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Naskh Arabic', serif;
+    }
+    body {
+      background: linear-gradient(#f0f4f7, #dce3ea);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #005599;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    .page {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #003366;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>خوش آمدید ایاز پٹرولیم کی طرف سے</h1>
+    <p>ہماری خدمات، قیمتیں اور معیار دیکھیے</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showPage('welcome')">ہوم</a>
+    <a href="#" onclick="showPage('petrol')">پٹرول</a>
+    <a href="#" onclick="showPage('diesel')">ڈیزل</a>
+    <a href="#" onclick="showPage('prices')">قیمتیں</a>
+    <a href="#" onclick="showPage('contact')">رابطہ</a>
+  </nav>
+
+  <section id="welcome" class="page active">
+    <h2>ایاز پٹرولیم میں خوش آمدید</h2>
+    <p>ہم پیش کرتے ہیں اعلیٰ معیار کا پٹرول اور ڈیزل۔ ہمارا مقصد ہے کہ آپ کو بہترین سروس مہیا کریں۔</p>
+  </section>
+
+  <section id="petrol" class="page">
+    <h2>ہمارا پٹرول</h2>
+    <p>ہمارا پٹرول نور پور تھل کے معروف پٹرولیم پمپ سے حاصل کیا جاتا ہے، جو صاف اور موثر انجن کارکردگی کے لیے مشہور ہے۔</p>
+  </section>
+
+  <section id="diesel" class="page">
+    <h2>ہمارا ڈیزل</h2>
+    <p>ایاز پٹرولیم کا ڈیزل بہترین معیار کا ہے، جو بھاری گاڑیوں اور مشینری کے لیے موزوں ہے۔</p>
+  </section>
+
+  <section id="prices" class="page">
+    <h2>ہماری قیمتیں</h2>
+    <p>🛢️ پٹرول: 280 روپے فی لیٹر</p>
+    <p>🛢️ ڈیزل: 290 روپے فی لیٹر</p>
+    <br>
+    <p>کب آ رہے ہیں؟ ہم آپ کے منتظر ہیں۔</p>
+  </section>
+
+  <section id="contact" class="page">
+    <h2>Contact Us</h2>
+    <p>We are always at your service. Visit us or give us a call.</p>
+    <p>📞 Main Contact: <span dir="ltr">+92 312 6654181</span></p>
+    <p>👤 Owner: Zeeshan Tariq – <span dir="ltr">+92 312 6491850</span></p>
+    <p>👤 Sohaib Tariq</p>
+  </section>
+
+  <footer>
+    <p>© 2025 ایاز پٹرولیم۔ تمام حقوق محفوظ ہیں۔</p>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
